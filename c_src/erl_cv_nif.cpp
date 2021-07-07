@@ -825,7 +825,7 @@ destruct_cv_connection(ErlNifEnv*, void *arg)
 static void
 destruct_cv_mat(ErlNifEnv*, void *arg)
 {
-    enif_fprintf(stderr, "destruct cv_mat\r\n");
+    //enif_fprintf(stderr, "destruct cv_mat\r\n");
     erl_cv_mat *emat = (erl_cv_mat *)arg;
     if(emat->mat) {
         delete emat->mat;
